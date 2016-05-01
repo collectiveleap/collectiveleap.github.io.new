@@ -1,6 +1,6 @@
 ---
 published: true
-title: \[knowledge\] workers of the world unite!
+title: &#91;knowledge&#92; workers of the world unite!
 layout: post
 ---
 ok
