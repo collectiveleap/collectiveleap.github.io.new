@@ -1,0 +1,6 @@
+---
+published: true
+title: the test
+layout: post
+---
+and here's some content
