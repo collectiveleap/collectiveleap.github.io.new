@@ -5,3 +5,4 @@ title: Collective Leap
 tagline: experiments in making tools for making sense
 description: experiments in making tools for making sense
 paginate: 5
+permalink: /blog/:categories/:year/:month/:day/:title/
