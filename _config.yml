@@ -1,8 +1,32 @@
-excerpt_separator: ""
-markdown: kramdown
-url: http://collectiveleap.github.io
-title: Collective Leap
-tagline: experiments in making tools for making sense
-description: experiments in making tools for making sense
-paginate: 5
-permalink: /blog/:categories/:year/:month/:day/:title/
+title:               My digital garden
+include:             ['_pages']
+exclude:             ['_includes/notes_graph.json']
+# You may need to change the base URL depending on your deploy configuration.
+# Specifically, when using GitHub Pages, the baseurl should point to where GitHub
+# Pages deploys your repository (which is usually the repository name).
+baseurl:             /
+
+permalink:           pretty
+relative_permalinks: false
+
+plugins:
+  - jekyll-last-modified-at
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+collections:
+  notes:
+    output: true
+    permalink: /:slug
+
+defaults:
+  - scope:
+      path: "**/*"
+    values:
+      layout: "default"
+  - scope:
+      path: "_notes/**/*.md"
+    values:
+      layout: "note"
